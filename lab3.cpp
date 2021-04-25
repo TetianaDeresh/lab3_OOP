@@ -73,7 +73,7 @@ void insertionSort(Rectangle arr[], int n) {
     for (int i = 1; i < n; i++) {
         Rectangle key = arr[i];
         int j = i - 1;
-        while (j >= 0 && arr[j] < key) {
+        while (j >= 0 && arr[j].Area() < key.Area()) {
             arr[j + 1] = arr[j];
             j = j - 1;
         }
